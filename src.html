@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Filmy ślubne Lublin i okolice | Studio Filmu PIĄTE OKO</title>
+<meta name="description" content="Nowoczesne filmy i teledyski ślubne - Lublin i województwo lubelskie. Pakiety od 5 500 zł, trailer w każdym pakiecie, ujęcia z drona. Studio Filmu PIĄTE OKO, Wojciech Chruścicki, tel. +48 792 334 438.">
+<meta name="theme-color" content="#1d1d1d">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-m-720.webp" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-720.webp 720w, img/hero-m-960.webp 960w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-960.webp 960w, img/hero-1280.webp 1280w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w, img/hero-2560.webp 2560w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/jost-rdzen.woff2" crossorigin>
+<style>
+@font-face{font-family:Jost;font-weight:100 900;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:100 900;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Jost fb";src:local("Arial");size-adjust:96%;ascent-override:104%;descent-override:30%}
+:root{--ink:#1d1d1d;--gold:#c49a66;--gold2:#d6ae7c;--mut:#50555c;--g:#eef0f2;--line:#d9dce1;--noc:#151515;--hh:62px;--w:min(calc(100vw - 32px),1760px)}
+@media (min-width:761px){:root{--hh:80px;--w:min(90vw,2240px)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Jost,"Jost fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(17px,.3vw + 14.5px,22px);line-height:1.6;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:400;line-height:1.08;letter-spacing:-.005em}
+h2{font-size:clamp(34px,3.3vw,66px);font-weight:300}
+h3{font-size:clamp(21px,1.35vw,27px);font-weight:500;line-height:1.2}
+p{margin:0}
+.wrap{width:var(--w);margin:0 auto}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;z-index:99;background:#fff;padding:8px 12px}
+svg.ico{width:1em;height:1em;flex:none}
+
+/* przycisk = korpus aparatu z logo: prostokat z garbem wizjera */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 32px;margin-top:9px;background:var(--gold);color:var(--ink);font:500 1.05rem/1 Jost,"Jost fb",Arial,sans-serif;letter-spacing:.01em;text-decoration:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .15s}
+.btn::before{content:"";position:absolute;left:20px;bottom:100%;width:34px;height:9px;background:inherit}
+.btn:hover{background:var(--gold2)}
+.btn.ciem{background:var(--ink);color:#fff}
+.btn.ciem:hover{background:#333}
+.btn:focus-visible,.menu a:focus-visible,.tor button:focus-visible,.film button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;height:var(--hh);background:#fff;border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+.top.sc{border-bottom-color:var(--line);box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.top .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{display:block;color:var(--ink);line-height:0;flex:none}
+.logo svg{width:auto;height:34px}
+@media (min-width:761px){.logo svg{height:clamp(40px,1.9vw,50px)}}
+.menu{display:flex;align-items:center;gap:clamp(18px,2vw,40px)}
+.menu a{text-decoration:none;font-weight:400;font-size:clamp(16px,.35vw + 11px,20px);position:relative;padding:6px 0;letter-spacing:.01em}
+.menu a.on::after,.menu a:not(.btn):hover::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--gold)}
+.menu .tel{font-weight:500;white-space:nowrap}
+.menu .btn{margin-top:9px;min-height:48px;padding:0 24px;font-size:1rem}
+.ikt,.burger{display:none}
+@media (max-width:1180px){.menu .tel{display:none}}
+@media (max-width:960px){
+  .menu{position:fixed;inset:var(--hh) 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:6px 16px 24px;border-top:1px solid var(--line);box-shadow:0 18px 30px rgba(0,0,0,.12);transform:translateY(-8px);opacity:0;visibility:hidden;transition:.2s}
+  .top.open .menu{transform:none;opacity:1;visibility:visible}
+  .menu a{padding:15px 2px;border-bottom:1px solid var(--g);font-size:1.12rem}
+  .menu a.on::after,.menu a:hover::after{display:none}
+  .menu a.on{box-shadow:inset 3px 0 0 var(--gold);padding-left:14px}
+  .menu .tel{display:block}
+  .menu .btn{margin-top:24px;border:0;min-height:54px}
+  .ikt{display:inline-grid;place-items:center;width:44px;height:44px;margin-left:auto;text-decoration:none;color:var(--ink)}
+  .ikt svg{width:23px;height:23px}
+  .burger{display:inline-grid;place-items:center;width:46px;height:46px;border:0;background:var(--ink);cursor:pointer;padding:0;margin-right:-2px}
+  .burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:#fff;position:relative;transition:.2s}
+  .burger span::before,.burger span::after{content:"";position:absolute;left:0}
+  .burger span::before{top:-6px}.burger span::after{top:6px}
+  .top.open .burger span{background:transparent}
+  .top.open .burger span::before{top:0;transform:rotate(45deg)}
+  .top.open .burger span::after{top:0;transform:rotate(-45deg)}
+}
+
+/* pierwszy ekran: pelny kadr z teledysku */
+.hero{position:relative;min-height:calc(100svh - var(--hh));display:flex;flex-direction:column;justify-content:flex-end;color:#fff;background:#24301f;overflow:hidden}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:50% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(0,0,0,.35) 52%,rgba(0,0,0,.78) 100%)}
+.hero-in{position:relative;z-index:2;padding:40px 0 34px}
+.ramka{display:block;width:min(260px,62vw);height:auto;color:var(--gold);margin:0 0 18px}
+.hero h1{font-weight:300}
+.h1d{display:block;font-size:clamp(44px,12.4vw,64px);line-height:1.02;letter-spacing:-.01em}
+.h1f{display:block;font-size:clamp(17px,4.6vw,21px);font-weight:500;letter-spacing:.02em;margin-top:14px;line-height:1.3}
+.hero .lead{max-width:36ch;margin-top:12px;font-size:clamp(16px,4.2vw,19px);line-height:1.5;color:rgba(255,255,255,.92)}
+.hero .btn{margin-top:calc(24px + 9px)}
+.kadr{position:absolute;z-index:2;right:16px;top:14px;font-size:.78rem;color:rgba(255,255,255,.85);text-shadow:0 1px 3px rgba(0,0,0,.5)}
+.kadr{display:none}
+@media (min-width:761px){
+  .hero{justify-content:center;text-align:center}
+  .hero picture img{object-position:50% 40%}
+  .hero::after{background:radial-gradient(ellipse 34% 52% at 50% 52%,rgba(10,22,8,.5),rgba(10,22,8,0) 100%),linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,0) 30%,rgba(0,0,0,0) 70%,rgba(0,0,0,.35))}
+  .hero-in{padding:60px 0 60px 12vw;display:flex;flex-direction:column;align-items:center}
+  .ramka{width:clamp(300px,24vw,470px);margin:0 auto 26px}
+  .h1d{font-size:clamp(54px,5.3vw,140px);text-shadow:0 2px 24px rgba(0,0,0,.35)}
+  .h1f{font-size:clamp(19px,1.25vw,31px);margin-top:18px}
+  .hero .lead{margin:16px auto 0;font-size:clamp(18px,1.1vw,27px);max-width:40ch;text-shadow:0 1px 10px rgba(0,0,0,.45)}
+  .hero .btn{min-height:clamp(58px,3vw,72px);padding:0 clamp(34px,2vw,48px);font-size:clamp(17px,.9vw,22px)}
+  .kadr{display:block;top:auto;bottom:22px;right:max(4vw,24px)}
+  .kadr .m{display:none}
+}
+
+/* sekcje */
+section{padding:clamp(72px,8vw,150px) 0}
+.szary{background:var(--g)}
+.glowa{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px 48px;margin-bottom:clamp(32px,3.4vw,60px)}
+.glowa p{max-width:58ch;color:var(--mut)}
+
+/* piate oko - idea */
+.oko{display:grid;grid-template-columns:minmax(0,1fr);gap:40px;align-items:center}
+.oko-foto{position:relative;margin:0}
+.oko-foto img{width:100%;aspect-ratio:1400/1000;object-fit:cover}
+.oko-foto .ramka{position:absolute;left:8%;top:-22px;width:min(330px,54%);margin:0}
+.oko-foto figcaption{font-size:.85rem;color:var(--mut);margin-top:10px}
+.oko-txt h2{margin-bottom:26px}
+.oko-txt p+p{margin-top:16px}
+.oko-txt .cyt{font-size:clamp(21px,1.5vw,29px);line-height:1.4;font-weight:300}
+.podpis{margin-top:26px;font-weight:500}
+.podpis span{display:block;font-weight:400;color:var(--mut);font-size:.92rem}
+@media (min-width:1000px){.oko{grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:clamp(48px,6vw,130px)}.oko-txt p{max-width:62ch}}
+
+/* teledyski - mocna sekcja */
+.noc{background:var(--noc);color:#fff}
+.noc .glowa p{color:#b9bcc1}
+.tor{display:grid;grid-auto-flow:column;grid-auto-columns:86%;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;padding-bottom:4px}
+.tor::-webkit-scrollbar{display:none}
+.tor.drag{scroll-snap-type:none;cursor:grabbing}
+.tor.drag *{pointer-events:none}
+@media (min-width:640px){.tor{grid-auto-columns:calc((100% - 16px)/2)}}
+@media (min-width:1100px){.tor{grid-auto-columns:calc((100% - 2*22px)/3);gap:22px}}
+@media (min-width:1700px){.tor{grid-auto-columns:calc((100% - 3*24px)/4);gap:24px}}
+.film{scroll-snap-align:start;margin:0;min-width:0}
+.ekran{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden}
+.ekran button{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;background:#000;cursor:pointer;color:#fff}
+.ekran img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease,opacity .3s}
+.ekran button::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.45))}
+.przeslona{position:absolute;z-index:2;left:50%;top:50%;width:68px;height:68px;margin:-34px 0 0 -34px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.45));transition:transform .45s cubic-bezier(.3,.7,.4,1)}
+.przeslona svg{width:100%;height:100%;color:#fff}
+.przeslona i{position:absolute;left:50%;top:50%;margin:-7px 0 0 -4px;border-style:solid;border-width:7px 0 7px 11px;border-color:transparent transparent transparent var(--gold)}
+.ekran button:hover img{transform:scale(1.04)}
+.ekran button:hover .przeslona,.ekran button:focus-visible .przeslona{transform:rotate(60deg)}
+.ekran button:hover .przeslona i,.ekran button:focus-visible .przeslona i{transform:rotate(-60deg)}
+.ekran iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.film figcaption{padding:14px 0 0}
+.film b{display:block;font-weight:500;font-size:1.08rem}
+.film figcaption span{display:block;color:#b9bcc1;font-size:.93rem;line-height:1.4;margin-top:2px}
+.nawig{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:30px;flex-wrap:wrap}
+.strz{display:flex;gap:10px}
+.strz button{width:52px;height:52px;display:grid;place-items:center;border:1px solid #4a4a4a;background:transparent;color:#fff;cursor:pointer}
+.strz button:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+.strz button:disabled{opacity:.3;cursor:default}
+.strz svg{width:20px;height:20px}
+.noc .lnk{color:#fff;font-weight:500;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:3px}
+.noc .lnk:hover{color:var(--gold2)}
+
+/* jak powstaje film */
+.kroki{display:grid;grid-template-columns:minmax(0,1fr);gap:34px}
+.krok{border-top:1px solid #c7cbd1;padding-top:24px}
+.krok h3{margin-bottom:12px}
+.krok p{color:#3d4147}
+@media (min-width:860px){.kroki{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(28px,3vw,64px)}}
+
+/* pakiety */
+.pak{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+.karta{border:1px solid var(--line);padding:clamp(26px,2vw,40px);display:flex;flex-direction:column;background:#fff}
+.karta svg.pr{width:54px;height:54px;color:var(--ink);margin-bottom:22px}
+.karta h3{font-weight:400;font-size:clamp(24px,1.6vw,31px)}
+.cena{font-size:clamp(34px,2.6vw,48px);font-weight:300;line-height:1.1;margin:10px 0 12px;letter-spacing:-.01em}
+.cena small{font-size:.42em;font-weight:400;color:var(--mut);letter-spacing:0}
+.karta .opis{color:var(--mut);min-height:3.2em}
+.karta ul{list-style:none;margin:22px 0 0;padding:0;border-top:1px solid var(--line)}
+.karta li{padding:11px 0;border-bottom:1px solid var(--g);line-height:1.4}
+.dod{background:var(--g);padding:clamp(26px,2vw,40px)}
+.dod h3{margin-bottom:14px}
+.dod ul{margin:0;padding:0 0 0 1.1em}
+.dod li{padding:3px 0}
+.dod p{margin-top:16px;color:var(--mut);font-size:.95rem}
+.pak-stopa{display:flex;flex-wrap:wrap;align-items:center;gap:18px 36px;margin-top:36px}
+.pak-stopa p{color:var(--mut);max-width:70ch;font-size:.95rem}
+@media (min-width:760px){.pak{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1280px){.pak{grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,.92fr);gap:22px}}
+
+/* miejsca */
+.miejsca{display:grid;grid-template-columns:minmax(0,1fr);gap:30px 60px;align-items:start}
+.lista{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));column-gap:clamp(20px,2.4vw,48px);font-size:clamp(19px,1.25vw,26px);font-weight:300;line-height:1.3}
+.lista li{border-top:1px solid #c7cbd1;padding:14px 0 16px}
+.miejsca p{color:var(--mut);max-width:52ch}
+@media (min-width:1000px){.miejsca{grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr)}}
+@media (max-width:560px){.lista{grid-template-columns:repeat(2,minmax(0,1fr));font-size:17px}.lista li{padding:11px 0 12px}}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,1fr);gap:44px}
+.dane h2{margin-bottom:22px}
+.dane .tel{display:inline-block;font-size:clamp(30px,2.6vw,48px);font-weight:300;text-decoration:none;line-height:1.1;margin:8px 0 6px;letter-spacing:-.01em}
+.dane .mail{font-size:1.1rem;font-weight:500}
+.dane address{font-style:normal;margin-top:22px;color:var(--mut)}
+.dane .kawa{margin-top:22px;max-width:44ch}
+.soc{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:24px}
+.soc a{font-weight:500;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px}
+form{background:var(--g);padding:clamp(22px,2.4vw,48px);display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+label{display:block;font-size:.92rem;font-weight:500;margin-bottom:6px}
+input,textarea{width:100%;font:inherit;font-size:1rem;padding:13px 14px;border:1px solid #c3c7cd;background:#fff;color:var(--ink);border-radius:0}
+input:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:0;border-color:var(--gold)}
+input[aria-invalid=true],textarea[aria-invalid=true]{border-color:#b3261e}
+textarea{min-height:130px;resize:vertical}
+.zg{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;font-weight:400;color:var(--mut);line-height:1.45}
+.zg input{width:20px;height:20px;flex:none;margin:2px 0 0;accent-color:var(--ink)}
+form .btn{justify-self:start;margin-top:14px}
+#msg{background:#fff;border-left:3px solid var(--gold);padding:12px 14px;font-size:.95rem}
+@media (min-width:640px){form{grid-template-columns:repeat(2,minmax(0,1fr))}.pe{grid-column:1/-1}}
+@media (min-width:1100px){.kontakt{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(48px,6vw,120px)}}
+
+/* stopka */
+footer{background:var(--ink);color:#b7babf;padding:56px 0 28px;font-size:.95rem}
+.st{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 24px}
+.st b{display:block;color:#fff;font-weight:500;margin-bottom:8px}
+.st a{text-decoration:none}.st a:hover{color:#fff}
+.st p{line-height:1.7}
+.st .logo{color:#fff;grid-column:1/-1}
+.st .logo svg{height:36px}
+.dol{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px;border-top:1px solid #3a3a3a;margin-top:40px;padding-top:22px;font-size:.875rem}
+@media (min-width:900px){.st{grid-template-columns:1.3fr 1fr 1fr 1fr}.st .logo{grid-column:auto}}
+{{BADGE_STYLE}}
+
+/* dolny pasek na telefonie po przewinieciu */
+.mob{position:fixed;left:0;right:0;bottom:0;z-index:40;display:none;grid-template-columns:1fr 1.4fr;background:#fff;border-top:1px solid var(--line);transform:translateY(100%);transition:transform .25s}
+.mob a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;text-decoration:none;font-weight:500}
+.mob a+a{background:var(--gold)}
+.mob.widac{transform:none}
+@media (max-width:760px){.mob{display:grid}body{padding-bottom:0}footer{padding-bottom:84px}}
+.podglad{background:var(--g);color:var(--mut);font-size:.85rem;text-align:center;padding:10px 16px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+{{IRIS}}
+<symbol id="ramka" viewBox="0 0 320 44"><path d="M2 42V14h112V2h52v12h152v28" fill="none" stroke="currentColor" stroke-width="3"/></symbol>
+<symbol id="sl" viewBox="0 0 20 20"><path d="M12.5 4 6.5 10l6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+<symbol id="sp" viewBox="0 0 20 20"><path d="M7.5 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+<symbol id="tel" viewBox="0 0 24 24"><path d="M7 3h3l1.5 5-2 1.5a12 12 0 0 0 5 5l1.5-2 5 1.5v3c0 1.1-.9 2-2 2C11 19 5 13 5 5c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+</svg>
+<a class="skip" href="#tresc">Przejdź do treści</a>
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#start" aria-label="Studio Filmu PIĄTE OKO - strona główna">{{LOGO}}</a>
+    <a class="ikt" href="tel:+48792334438" aria-label="Zadzwoń: +48 792 334 438"><svg><use href="#tel"/></svg></a>
+    <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+    <nav class="menu" id="menu" aria-label="Menu główne">
+      <a href="#o-nas">O nas</a>
+      <a href="#filmy">Teledyski</a>
+      <a href="#pakiety">Pakiety i ceny</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="tel" href="tel:+48792334438">+48 792 334 438</a>
+      <a class="btn" href="#kontakt">Zapytaj o termin</a>
+    </nav>
+  </div>
+</header>
+
+<main id="tresc">
+<div class="hero" id="start">
+  <picture>
+    <source media="(max-width:760px)" srcset="img/hero-m-480.webp 480w, img/hero-m-720.webp 720w, img/hero-m-960.webp 960w" sizes="100vw" width="960" height="1382">
+    <img src="img/hero-1600.webp" srcset="img/hero-960.webp 960w, img/hero-1280.webp 1280w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w, img/hero-2560.webp 2560w" sizes="100vw" width="2560" height="1440" alt="Para młoda patrzy na siebie w plenerze - kadr z teledysku ślubnego Studia PIĄTE OKO" fetchpriority="high">
+  </picture>
+  <p class="kadr"><span class="d">Kadr z teledysku: Weronika i Bartosz, Kmicic Zemborzyce</span><span class="m">Kadr z teledysku: Mika i Piotr, Hotel Janów</span></p>
+  <div class="wrap hero-in">
+    <svg class="ramka" viewBox="0 0 320 44" aria-hidden="true"><use href="#ramka"/></svg>
+    <h1><span class="h1d">Widzimy więcej<br> niż inni</span><span class="h1f">Nowoczesny film ślubny - Lublin i okolice</span></h1>
+    <p class="lead">Tworzymy filmy ślubne, w których nie ma miejsca na nudę. Emocje, detale i muzyka dobrana do&nbsp;Was.</p>
+    <a class="btn" href="#kontakt">Zapytaj o wolny termin</a>
+  </div>
+</div>
+
+<section id="o-nas">
+  <div class="wrap oko">
+    <figure class="oko-foto">
+      <svg class="ramka" viewBox="0 0 320 44" aria-hidden="true"><use href="#ramka"/></svg>
+      <img src="img/wojciech-1400.webp" srcset="img/wojciech-800.webp 800w, img/wojciech-1400.webp 1400w" sizes="(min-width:1000px) 50vw, 92vw" width="1400" height="1000" loading="lazy" decoding="async" alt="Wojciech Chruścicki z kamerą na stabilizatorze podczas filmowania wesela">
+      <figcaption>Wojciech Chruścicki przy pracy</figcaption>
+    </figure>
+    <div class="oko-txt">
+      <h2>Piąte oko - co to znaczy?</h2>
+      <p class="cyt">Okulary, które noszę od dziecka, są moją drugą parą oczu. Aparat, jego monitor i wizjer są piątym okiem, przez które patrzę podczas filmowania.</p>
+      <p>Ale piąte oko to coś więcej niż wzrok - to umiejętność obserwacji uczuć i emocji. Dzięki niej zwracam uwagę na szczegóły i staram się, żeby nie umknął mi żaden moment. Wiem, ile czasu i sił poświęciliście, by ten dzień wyglądał jak marzenie, dlatego zbieram wszystkie jego ulotne chwile.</p>
+      <p>Efekt? Film dynamiczny, pełen dobrych kadrów i dopasowanej muzyki. Montaż i jakość na miarę dzisiejszych czasów - zapomnijcie o telenoweli z lat 90.</p>
+      <p class="podpis">Wojciech Chruścicki<span>właściciel Studia Filmu PIĄTE OKO</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="noc" id="filmy">
+  <div class="wrap">
+    <div class="glowa">
+      <h2>Najnowsze teledyski ślubne</h2>
+      <p>Prawdziwe pary i miejsca z Lubelszczyzny. Kliknijcie kadr, a film uruchomi się od razu.</p>
+    </div>
+    <div class="tor" id="tor" data-tor>
+{{FILMY}}
+    </div>
+    <div class="nawig">
+      <a class="lnk" href="https://www.youtube.com/channel/UCNYFAMqi-PAs2m42QKWRZpg" rel="noopener" target="_blank">Wszystkie filmy na kanale YouTube</a>
+      <div class="strz" data-nav="tor"><button type="button" data-k="-1" aria-label="Poprzednie filmy"><svg><use href="#sl"/></svg></button><button type="button" data-k="1" aria-label="Następne filmy"><svg><use href="#sp"/></svg></button></div>
+    </div>
+  </div>
+</section>
+
+<section class="szary" id="jak">
+  <div class="wrap">
+    <div class="glowa">
+      <h2>Jak powstaje Wasz film</h2>
+      <p>Każdy ślub to osobna historia i inni główni bohaterowie. Jesteśmy otwarci na Wasze pomysły co do reportażu.</p>
+    </div>
+    <div class="kroki">
+      <div class="krok"><h3>Filmowanie</h3><p>Pracujemy na bezlusterkowych aparatach Sony z jasnymi obiektywami. O stabilizację obrazu i dobry dźwięk nie musicie się martwić - mamy odpowiedni sprzęt.</p></div>
+      <div class="krok"><h3>Montaż</h3><p>Nowoczesny, dynamiczny styl. Sceny, kadry i muzykę dobieramy ze smakiem, a obróbka kolorystyczna nadaje filmowi wyjątkowy, spójny wygląd.</p></div>
+      <div class="krok"><h3>Gotowy film i trailer</h3><p>Reportaż ze wszystkimi najważniejszymi momentami dnia, opowiedziany jak spójna historia o Was. Do tego trailer - dynamiczny albo romantyczny, wybieracie sami.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pakiety">
+  <div class="wrap">
+    <div class="glowa">
+      <h2>Pakiety i ceny</h2>
+      <p>Im szerzej otwarta przysłona, tym więcej światła wpada do obiektywu. Im większy pakiet, tym więcej Waszego dnia zobaczycie na filmie.</p>
+    </div>
+    <div class="pak">
+      <article class="karta">
+        <svg class="pr" aria-hidden="true"><use href="#ir1"/></svg>
+        <h3>Silver Eye</h3>
+        <p class="cena">5 500 zł<small> *</small></p>
+        <p class="opis">Intensywnie i konkretnie. Wszystko, co najważniejsze tego dnia, w filmowej pigułce.</p>
+        <ul><li>jeden operator</li><li>film 20-25 min + trailer 2 min</li><li>od przygotowań do godz. 22</li><li>link do filmu w chmurze</li><li>miniplener w dniu ślubu</li></ul>
+      </article>
+      <article class="karta">
+        <svg class="pr" aria-hidden="true"><use href="#ir2"/></svg>
+        <h3>Golden Eye</h3>
+        <p class="cena">6 000 zł<small> *</small></p>
+        <p class="opis">Nowoczesny reportaż, który pokazuje każdy szczegół i wiele emocji.</p>
+        <ul><li>jeden operator</li><li>film 50-60 min + trailer 3 min</li><li>od przygotowań do oczepin</li><li>link do filmu w chmurze</li><li>miniplener w dniu ślubu</li><li>ujęcia miejsca ślubu i wesela z drona</li></ul>
+      </article>
+      <article class="karta">
+        <svg class="pr" aria-hidden="true"><use href="#ir3"/></svg>
+        <h3>Platinum Eye</h3>
+        <p class="cena">6 800 zł<small> *</small></p>
+        <p class="opis">Duża dawka zabawy, detali i wzruszeń. Klasyka w nowoczesnym wydaniu.</p>
+        <ul><li>jeden operator</li><li>film 80-90 min + trailer 3-4 min</li><li>od przygotowań do oczepin</li><li>ozdobny pendrive z filmem</li><li>ujęcia miejsca ślubu i wesela z drona</li></ul>
+      </article>
+      <aside class="dod">
+        <h3>Każdy pakiet można rozbudować</h3>
+        <ul><li>drugi operator</li><li>plener ślubny innego dnia</li><li>podziękowania dla rodziców</li><li>sesja narzeczeńska</li><li>film w jakości 4K</li><li>dodatkowe ujęcia z drona</li></ul>
+        <p>Macie inny pomysł na film? Przygotujemy ofertę skrojoną dla Was.</p>
+      </aside>
+    </div>
+    <div class="pak-stopa">
+      <a class="btn ciem" href="#kontakt">Zapytaj o wolny termin</a>
+      <p>* Ceny dotyczą terminów w 2026 i 2027 roku. Ślub w 2028? Napiszcie przez formularz - przygotujemy wycenę.</p>
+    </div>
+  </div>
+</section>
+
+<section class="szary" id="miejsca">
+  <div class="wrap miejsca">
+    <div>
+      <h2>Gdzie filmowaliśmy</h2>
+      <p style="margin-top:20px">Pracujemy głównie w województwie lubelskim, ale bez problemu dojedziemy na drugi kraniec Polski.</p>
+    </div>
+    <ul class="lista" aria-label="Miejsca z naszych teledysków">
+      <li>Edels Chełm</li><li>Pałac Goetz</li><li>Czerniecówka Wojciechów</li><li>Hotel Janów</li><li>Kmicic Zemborzyce</li><li>Rezydencja w Szczerym Polu</li><li>Restoria Radzyń Podlaski</li><li>Biały Zakątek Radzyń Podlaski</li><li>Karczma Zbójnicka</li><li>Karczma pod lasem Mokre</li><li>Kapama Bogucin</li><li>CSK Lublin</li><li>Hotel Focus Panieńszczyzna</li><li>Restauracja President Kock</li>
+    </ul>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap kontakt">
+    <div class="dane">
+      <h2>Zapytaj o wolny termin</h2>
+      <p>Zadzwońcie albo napiszcie - odpowiemy i przedstawimy szczegóły naszej pracy.</p>
+      <a class="tel" href="tel:+48792334438">+48 792 334 438</a><br>
+      <a class="mail" href="mailto:biuro@piateoko.pl">biuro@piateoko.pl</a>
+      <address>Studio Filmu PIĄTE OKO<br>Wojciech Chruścicki<br>ul. Sosnowa 11, 21-080 Garbów</address>
+      <p class="kawa">Spotkanie w Lublinie? Żaden problem. Chętnie odpowiem na Wasze pytania i przy dobrej kawie opowiem, jak pracuję.</p>
+      <div class="soc"><a href="https://www.facebook.com/Studio-Filmu-PI%C4%84TE-OKO-106141958275981" rel="noopener" target="_blank">Facebook</a><a href="https://www.instagram.com/piate_oko/" rel="noopener" target="_blank">Instagram</a><a href="https://www.youtube.com/channel/UCNYFAMqi-PAs2m42QKWRZpg" rel="noopener" target="_blank">YouTube</a></div>
+    </div>
+    <form id="form" novalidate>
+      <div><label for="f-imie">Imiona</label><input id="f-imie" name="imie" autocomplete="name" required></div>
+      <div><label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+      <div><label for="f-data">Data ślubu</label><input id="f-data" name="data" type="date"></div>
+      <div><label for="f-miejsce">Miejsce wesela</label><input id="f-miejsce" name="miejsce" placeholder="np. Pałac Goetz"></div>
+      <div class="pe"><label for="f-tresc">Wiadomość</label><textarea id="f-tresc" name="tresc" placeholder="Który pakiet Was interesuje, czy myślicie o dodatkach?"></textarea></div>
+      <label class="zg pe"><input type="checkbox" name="zgoda" required> Wyrażam zgodę na przetwarzanie moich danych w celu odpowiedzi na zapytanie, zgodnie z polityką prywatności.</label>
+      <div class="pe"><button class="btn ciem" type="submit">Wyślij zapytanie</button></div>
+      <p id="msg" class="pe" hidden role="status">To podgląd strony - na docelowej wersji wiadomość trafi prosto na biuro@piateoko.pl.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="st">
+      <a class="logo" href="#start" aria-label="Studio Filmu PIĄTE OKO">{{LOGO}}</a>
+      <div><b>Studio Filmu PIĄTE OKO</b><p>Wojciech Chruścicki<br>ul. Sosnowa 11<br>21-080 Garbów</p></div>
+      <div><b>Kontakt</b><p><a href="tel:+48792334438">+48 792 334 438</a><br><a href="mailto:biuro@piateoko.pl">biuro@piateoko.pl</a></p></div>
+      <div><b>Obserwuj</b><p><a href="https://www.facebook.com/Studio-Filmu-PI%C4%84TE-OKO-106141958275981" rel="noopener" target="_blank">Facebook</a><br><a href="https://www.instagram.com/piate_oko/" rel="noopener" target="_blank">Instagram</a><br><a href="https://www.youtube.com/channel/UCNYFAMqi-PAs2m42QKWRZpg" rel="noopener" target="_blank">YouTube</a></p></div>
+    </div>
+    <div class="dol">
+      <span>&copy; <span id="rok">2026</span> Studio Filmu PIĄTE OKO</span>
+      {{BADGE_LINK}}
+    </div>
+  </div>
+</footer>
+<div class="mob" id="mob"><a href="tel:+48792334438"><svg class="ico" aria-hidden="true"><use href="#tel"/></svg>Zadzwoń</a><a href="#kontakt">Zapytaj o termin</a></div>
+<p class="podglad">Podgląd koncepcji nowej strony - treści i kadry z obecnej strony piateoko.pl i kanału YouTube studia.</p>
+<script src="app.js" defer></script>
+</body>
+</html>
